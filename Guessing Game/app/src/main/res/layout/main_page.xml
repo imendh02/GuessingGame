@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9ecef"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textColor="#003554"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="to the guessing game!"
+        android:textColor="#003554"
+        android:textSize="26sp"
+        android:gravity="center"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your task is to guess the number. You will Receive hints after each guess: whether the actual number is greater or smaller. Keep guessing until you find the correct number."
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="#6c757d"
+        android:paddingRight="14dp"
+        android:paddingLeft="14dp"
+        android:lineSpacingExtra="8sp" />
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp">
+        <Button
+            android:id="@+id/modeBeginner"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Beginner mode"
+            android:textColor="@color/white"
+            android:layout_marginRight="30dp"
+            android:background="#01497c"/>
+        <Button
+            android:id="@+id/modeExpert"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Expert mode"
+            android:textColor="@color/white"
+            android:background="#01497c"/>
+    </LinearLayout>
+</LinearLayout>

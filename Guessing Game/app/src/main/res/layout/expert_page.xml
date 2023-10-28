@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9ecef">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Expert Mode"
+        android:textColor="#003554"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You have one minute to guess the number."
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:textColor="#6c757d"
+        android:paddingRight="14dp"
+        android:paddingLeft="14dp"
+        android:lineSpacingExtra="8sp" />
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/number"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter number"
+        android:inputType="number"
+        android:layout_marginTop="25dp"/>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp">
+        <Button
+            android:id="@+id/start"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Start"
+            android:textColor="@color/white"
+            android:layout_marginRight="20dp"
+            android:background="#01497c"/>
+        <Button
+            android:id="@+id/result"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Result"
+            android:textColor="@color/white"
+            android:layout_marginRight="20dp"
+            android:background="#01497c"/>
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Reset"
+            android:textColor="@color/white"
+            android:background="#01497c"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#6c757d"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="25dp" />
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="01:00"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp" />
+</LinearLayout>
